@@ -61,15 +61,11 @@ def get_occupation(data, hometown)
   #     output = lady['occupation'] if lady['hometown'] == hometown
   #   end
   # end
-  found_lady = ""
 
   data.each do |curr_season, ladies|
     ladies.find { |lady| lady["hometown"] == hometown}
-
-    end
   end
 
-  found_lady["name"]
 
   output
 end
