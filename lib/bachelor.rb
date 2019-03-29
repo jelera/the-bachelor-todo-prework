@@ -67,4 +67,16 @@ end
 
 def get_average_age_for_season(data, season)
   # code here
+
+  age_list = []
+
+  data[season].each do |lady|
+    age = lady['age'].to_i
+    age_list << age
+  end
+
+  age_sum = age_list.inject(0) { |memo,num| memo + num }
+
+  (age_sum.to_f / age_list.length).round
+
 end
