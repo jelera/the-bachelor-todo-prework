@@ -30,14 +30,14 @@ def get_contestant_name(data, occupation)
   output = ""
 
   data.each do |curr_season, ladies|
-    ladies[]
-    ladies.select | lady |
-      binding.pry
-    end
+      ladies.each do |lady|
+        output = lady["name" if lady['occupation'] == occupation
+      end
   end
 
   output
 end
+
 
 def count_contestants_by_hometown(data, hometown)
   # code here
