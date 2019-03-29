@@ -31,7 +31,7 @@ def get_contestant_name(data, occupation)
 
   data.each do |curr_season, ladies|
       ladies.each do |lady|
-        output = lady["name" if lady['occupation'] == occupation
+        output = lady["name"] if lady['occupation'] == occupation
       end
   end
 
