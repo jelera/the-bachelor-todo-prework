@@ -65,7 +65,7 @@ def get_occupation(data, hometown)
     ladies.find { |lady| lady["hometown"] == hometown}
   end
 
-  output['occupation']
+  output
 
 
 end
