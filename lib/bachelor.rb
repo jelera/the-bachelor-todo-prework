@@ -29,7 +29,12 @@ def get_contestant_name(data, occupation)
 
   output = ""
 
-  # data.each do |
+  data.each do |curr_season, ladies|
+    ladies[]
+    ladies.select | lady |
+      binding.pry
+    end
+  end
 
   output
 end
