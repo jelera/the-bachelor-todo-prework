@@ -32,7 +32,7 @@ def get_contestant_name(data, occupation)
   output = ""
 
   # data.each do |
-  
+
   output
 end
 
