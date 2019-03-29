@@ -14,13 +14,11 @@ def get_first_name_of_season_winner(data, season)
   # code here
   output = ""
 
-  data.each do |curr_season, ladies|
-    if curr_season == season
-      ladies.each do |lady|
-        if lady["status"] == "Winner"
-          name = lady["name"].split(" ")
-          output = name[0]
-        end
+  data[season].each do |lady|
+    ladies.each do |lady|
+      if lady["status"] == "Winner"
+        name = lady["name"].split(" ")
+        output = name[0]
       end
     end
   end
@@ -30,6 +28,12 @@ end
 
 def get_contestant_name(data, occupation)
   # code here
+
+  output = ""
+
+  # data.each do |
+  
+  output
 end
 
 def count_contestants_by_hometown(data, hometown)
