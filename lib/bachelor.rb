@@ -15,11 +15,9 @@ def get_first_name_of_season_winner(data, season)
   output = ""
 
   data[season].each do |lady|
-    ladies.each do |lady|
-      if lady["status"] == "Winner"
-        name = lady["name"].split(" ")
-        output = name[0]
-      end
+    if lady["status"] == "Winner"
+      name = lady["name"].split(" ")
+      output = name[0]
     end
   end
 
